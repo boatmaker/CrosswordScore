@@ -25,22 +25,6 @@ def main():
         if type(line) == str and line != '\n':
             words.append(line.split())
 
-    # rawValues = open('/Users/hgoscenski/Desktop/characterValues.txt', 'r')
-    # temp = []
-    # for line in rawValues:
-    #     temp.append(line.split())
-    # print(temp)
-    # rowValueDict = {}
-    # columnValueDict = {}
-
-    #  REMEMBER TO CHANGE S TO WHAT IT IS SUPPOSED TO BE
-    # charValues = {'a': 5, 'b': 7, 'c': 8, 'd': 1, 'e': 7, 'f': 12,
-    #              'g': 1, 'h': 4, 'i': 12, 'j': 8, 'k': 6, 'l': 3,
-    #              'm': 5, 'n': 1, 'o': 3, 'p': 2, 'q': 8, 'r': 10,
-    #              's': 3, 't': 12, 'u': 3, 'v': 7, 'w': 1, 'x': 3,
-    #              'y': 2, 'z': 1}
-    # rowValueDict = {0:8, 1:2, 2:5, 3:3, 4:7, 5:9, 6:2}
-
     # Initiializes lists to store words that are found and not found
     found = []
     foundDict = {}
@@ -135,10 +119,6 @@ def main():
         if x not in found:
             # adds words not found to notFound list
             notFound.append(x)
-
-    # for x in found:
-    #     print(x, ' is worth:', score(x))
-
 
     # Prints both the found and not found words
     print()
